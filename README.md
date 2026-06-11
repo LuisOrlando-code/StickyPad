@@ -25,12 +25,8 @@ Aplicación de notas tipo post-it creada con HTML, CSS y JavaScript puro.
 4. Escribí tu nota
 5. Arrastrala a donde quieras
 
-## Deploy en Vercel
+## Pagina
+https://sticky-pad.vercel.app/
 
-1. Subí el código a GitHub
-2. Conectá el repositorio en Vercel
-3. Deploy automático
-
-## Autor
-
-Luis Orlando
+## Imagen
+![StickyPad](imagen/screenshot.png)
