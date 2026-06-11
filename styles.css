@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.toolbar-label {
+    color: white;
+    font-size: 14px;
+}
+
+.color-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.15);
+}
+
+.color-btn.selected {
+    border-color: white;
+}
+
+.amarillo { background-color: #fff9b1; }
+.rosa { background-color: #ffb3ba; }
+.verde { background-color: #baffc9; }
+.azul { background-color: #bae1ff; }
+.naranja { background-color: #ffdfba; }
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.note {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: move;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.note-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+    line-height: 1;
+}
+
+.delete-btn:hover {
+    color: #e53935;
+}
+
+.note-content {
+    flex: 1;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #333;
+    outline: none;
+}
+
+.note-content::placeholder {
+    color: #999;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff9b1;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+}
